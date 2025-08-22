@@ -13,6 +13,9 @@ It deploys the following components:
   - EC2 instances fetch website package from S3 (`s3://your-bucket/New-Bootstrap.zip/New-Bootstrap.zip`).
   - User data injects Cognito configuration directly into `index.html`.
 
+![AWS Architecture Diagram](./Project Diagram.jpeg)
+*Shows EC2, ALB, ASG, Cognito, RDS, and ElastiCache workflow.*
+
 ## Prerequisites
 
 - Terraform >= 1.3
