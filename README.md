@@ -10,7 +10,7 @@ It deploys the following components:
 - **Cognito Module**: Creates Cognito User Pool, App Client, and Domain for authentication.
 - **ALB Module**: Application Load Balancer configured with HTTPS (ACM certificate required).
 - **ASG Module**: Auto Scaling Group with Launch Template running EC2 web servers.
-  - EC2 instances fetch website package from S3 (`s3://mojahid/WebSites/New-Bootstrap.zip`).
+  - EC2 instances fetch website package from S3 (`s3://your-bucket/New-Bootstrap.zip/New-Bootstrap.zip`).
   - User data injects Cognito configuration directly into `index.html`.
 
 ## Prerequisites
