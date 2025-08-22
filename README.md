@@ -14,6 +14,7 @@ It deploys the following components:
   - User data injects Cognito configuration directly into `index.html`.
 
 ![AWS Architecture Diagram](./Project-Diagram.jpg)
+
 *Shows EC2, ALB, ASG, Cognito, RDS, and ElastiCache workflow.*
 
 ## Prerequisites
