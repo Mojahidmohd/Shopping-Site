@@ -33,14 +33,14 @@ It deploys the following components:
    terraform init
    ```
 
-3. Create `terraform.tfvars` file with values for variables (example below).
+3. Update `variables.tf` file with values for variables (example below).
 
 4. Apply infrastructure:
    ```bash
    terraform apply
    ```
 
-## Example `terraform.tfvars`
+## Example `variables.tf`
 
 ```hcl
 aws_region         = "us-east-1"
