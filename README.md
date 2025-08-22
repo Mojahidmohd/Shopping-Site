@@ -23,7 +23,7 @@ It deploys the following components:
 - AWS credentials configured (`aws configure` or environment variables).
 - An S3 bucket with the website zip uploaded (update bucket name/path in `modules/asg/user_data.sh.tftpl`).
 - ACM Certificate ARN for your ALB domain.
-- Check Structure file [Link here](https://github.com/Mojahidmohd/Shopping-Site/Structure)
+- Check Structure file [here](https://github.com/Mojahidmohd/main/Shopping-Site/Structure)
  to get information about project structure. 
 
 ## Usage
