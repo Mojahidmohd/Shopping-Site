@@ -118,4 +118,4 @@ acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/xxxxxxxx-x
 
 ## License
 
-This project is licensed under the [**MIT License**](./license)  
+This project is licensed under the [**MIT License**](./LICENSE)  
