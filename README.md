@@ -114,7 +114,7 @@ acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/xxxxxxxx-x
 ## Resources
 
 - Bootstrap from a [bootstrap](https://getbootstrap.com)
-- Images from [getyimages](https://www.gettyimages.com/)
+- Images from [gettyimages](https://www.gettyimages.com/)
 
 ## License
 
