@@ -9,7 +9,7 @@ It provisions multiple AWS services to ensure **high availability, security, and
 
 By following this project, you will:
 
-- Understand how to provision AWS resources using Terraform  
+- Understand how to provision AWS resources using `Terraform`  
 - Deploy a **shopping website** with authentication and caching  
 - Learn how to set up **EC2 instances behind an ALB** with Auto Scaling  
 - Implement **secure user authentication with Amazon Cognito**  
