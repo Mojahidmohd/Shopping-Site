@@ -20,10 +20,10 @@ By following this project, you will:
 
 ## Key Services Used
 
-- **VPC Module** – Networking (VPC, subnets, NAT, routing, gateways)  
+- **VPC Module** – Networking (VPC, subnets, routing, gateways)  
 - **Security Groups** – Secure inbound/outbound rules for EC2, ALB, RDS, Redis  
 - **EC2 + ASG Module** – Web application servers with Auto Scaling  
-  - EC2 instances fetch website package from S3 (`s3://your-bucket/New-Bootstrap.zip`)  
+  - EC2 instances fetch website package from S3 (`s3://your-bucket/WebSite.zip`)  
   - User data injects Cognito config into `index.html`  
 - **Application Load Balancer (ALB)** – HTTPS-enabled traffic distribution (ACM cert required)  
 - **Amazon Cognito** – Authentication and user management  
@@ -34,7 +34,7 @@ By following this project, you will:
 
 ## Architecture Diagram
 
-![AWS Architecture Diagram](./images/aws-architecture-diagram.png)  
+![AWS Architecture Diagram](./Project-Diagram.jpg)  
 *Shows EC2, ALB, ASG, Cognito, RDS, and ElastiCache workflow.*
 
 ---
