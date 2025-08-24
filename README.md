@@ -54,7 +54,7 @@ By following this project, you will:
 ## Prerequisites
 
 - Terraform >= 1.3  
-- Download `Terraform_Full_Project.zip`
+- Download and extract `Terraform_Full_Project.zip`
 - Change `<Your-Region>` in `/variables.tf`
 - ACM Certificate ARN for your ALB domain in `/variables.tf`
 - Create your own profile and change `<Your-Profile>` in `/provider.tf` 
