@@ -113,8 +113,8 @@ acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/xxxxxxxx-x
 
 ## Resources
 
-- Bootstrap from a [bootstrap](https://getbootstrap.com)
-- Images from [gettyimages](https://www.gettyimages.com/)
+- **[Bootstrap](https://getbootstrap.com/)** – UI framework for styling and responsive design  
+- **[Getty Images](https://www.gettyimages.com/)** – Stock images used in the project  
 
 ## License
 
