@@ -104,9 +104,9 @@ acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/xxxxxxxx-x
 
 ## Notes
 
-- EC2 runs in **public subnets**, ALB routes traffic to EC2.  
-- To run EC2 in **private subnets**, NAT Gateway is required for S3 and manage EC2.  
-- Cognito integration injects values into `index.html` during boot.  
+- EC2 runs in **public subnets**, ALB routes traffic to EC2  
+- To run EC2 in **private subnets**, NAT Gateway is required for S3 and manage EC2  
+- Cognito integration injects values into `index.html` during boot  
 - DB tables will be created in RDS are products and cart
 
 ---
@@ -118,4 +118,4 @@ acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/xxxxxxxx-x
 
 ## License
 
-This project is licensed under the **MIT License**.  
+This project is licensed under the [**MIT License**](./license)  
