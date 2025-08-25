@@ -35,7 +35,7 @@ By following this project, you will:
 
 ## Architecture Diagram
 
-![AWS Architecture Diagram](./Project-Diagram.jpg)  
+![AWS Architecture Diagram](./Project-Diagram.png)  
 *Shows EC2, ALB, ASG, Cognito, RDS, and ElastiCache workflow.*
 
 ---
