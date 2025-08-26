@@ -45,8 +45,8 @@ By following this project, you will:
 - **VPC Module** – Networking (VPC, subnets, NAT, routing, gateways)  
 - **Security Groups Module** – Secure inbound/outbound rules for EC2, ALB, RDS, Redis  
 - **EC2 + ASG Module** – Web application servers with Auto Scaling  
-  - User data configure EC2 instances to fetch website package from S3 (`s3://your-bucket/WebSite.zip`)  
-  - User data injects Cognito config into `index.html` automatically at boot 
+  - **User data** configure EC2 instances to fetch website package from S3 (`s3://your-bucket/WebSite.zip`)  
+  - **User data** injects **Cognito** configurations into `index.html` automatically at boot 
 - **Application Load Balancer (ALB) Module** – HTTPS-enabled traffic distribution (ACM cert required)  
 - **Amazon Cognito Module** – Authentication and user management  
 - **Amazon RDS (MySQL) Module** – Managed relational database with initial schema & data  
