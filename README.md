@@ -38,7 +38,9 @@ By following this project, you will:
   - **S3**: Application artifacts, static content, and logs  
   - **IAM**: Fine-grained roles for EC2, S3, ALB logging, and SSM    
 
----## Key Services Used
+---
+
+## Key Services Used
 
 - **VPC Module** – Networking (VPC, subnets, NAT, routing, gateways)  
 - **Security Groups Module** – Secure inbound/outbound rules for EC2, ALB, RDS, Redis  
@@ -66,7 +68,7 @@ By following this project, you will:
 - Secure authentication with **Cognito**  
 - Optimized database performance with **RDS**  
 - Integration of shopping website frontend with Cognito and database backend  
-- **Cost** – Free Tier friendly
+- **Cost** – Free Tier Friendly
 
 ---
 
@@ -93,8 +95,6 @@ acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/xxxxxxxx-x
 
 ---
 
----
-
 ## Example `/provider.tf`
 
 ```hcl
@@ -111,8 +111,6 @@ provider "aws" {
 ```bash
 aws s3 cp s3://<Your-Bucket>/WebSite.zip /tmp/WebSite.zip
 ```
-
----
 
 ---
 
@@ -148,11 +146,10 @@ aws s3 cp s3://<Your-Bucket>/WebSite.zip /tmp/WebSite.zip
 
 ---
 
----
-
 ## Instance Types Used
 
-Updates depend on **region** for **free tier**
+Update instance depend on **region** for **free tier**
+
 - **EC2**: t3.micro
 - **RDS**: db.t3.micro, single-AZ
 
@@ -163,8 +160,6 @@ Updates depend on **region** for **free tier**
 - EC2 runs in **public subnets**, ALB routes traffic to EC2.   
 - Cognito integration injects values into `index.html` during boot.  
 - DB tables will be created in RDS are `products` and `cart`
-
----
 
 ---
 
@@ -179,8 +174,6 @@ Updates depend on **region** for **free tier**
 
 ---
 
----
-
 ## Troubleshooting
 
 - Ensure your AWS credentials and region are correctly set in the provider
@@ -192,14 +185,10 @@ Updates depend on **region** for **free tier**
 
 ---
 
----
-
 ## Resources
 
 - Bootstrap from a [bootstrap](https://getbootstrap.com)
 - Images from [getyimages](https://www.gettyimages.com/)
-
----
 
 ---
 
