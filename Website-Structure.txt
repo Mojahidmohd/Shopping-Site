@@ -1,0 +1,35 @@
+Website/
+├── cart.html
+│── index.html
+│── schema.sql
+│
+├── assets/
+│   └── favicon.ico
+│
+├── backend/
+│   ├── add_to_cart.php
+│   ├── config.php
+│   ├── get_products.php
+│   ├── init_db.php
+│   ├── remove_item.php
+│   └── view_cart.php
+│  
+├── css/
+│   ├── bootstrap-icons.css
+│   └── style.css
+│
+├── fonts/
+│   ├── bootstrap-icons.woff
+│   └── bootstrap-icons.woff2
+│
+├── images/
+│   ├── xxx.jpg
+│   ├── xxx.jpg
+│
+├── js/
+│   └── scripts.js
+│   
+
+
+
+
