@@ -22,17 +22,17 @@ By following this project, you will:
 
 ### Architecture Overview
 - **Tier 1 (Web Tier)**  
-  - Application Load Balancer (ALB) in public subnets  
-  - EC2 instances in **public subnets**   
-  - Amazon Certificate Manager (ACM) TLS certificate for HTTPS  
-  - Cognito to control access to the website using User ID and Password
+  - **Application Load Balancer (ALB)** in **public subnets**  
+  - **EC2** instances in **public subnets**   
+  - **Amazon Certificate Manager (ACM)** TLS certificate for HTTPS  
+  - **Cognito** for website access control using user ID and password
 
 - **Tier 2 (Application Tier)**  
-  - EC2 instances managed by **Auto Scaling Group (ASG)**  
+  - **EC2** instances managed by **Auto Scaling Group (ASG)**  
   - Secure access via **AWS SSM Session Manager** (no open SSH ports)   
 
 - **Tier 3 (Database Tier)**  
-  - Amazon RDS MySQL in private subnets  
+  - **Amazon RDS** MySQL in private subnets  
   
 - **Supporting Services**  
   - **S3**: Application artifacts, static content, and logs  
@@ -45,9 +45,9 @@ By following this project, you will:
 - **VPC Module** – Networking (VPC, subnets, NAT, routing, gateways)  
 - **Security Groups Module** – Secure inbound/outbound rules for EC2, ALB, RDS, Redis  
 - **EC2 + ASG Module** – Web application servers with Auto Scaling  
-  - **User data** configure EC2 instances to fetch website package from S3 (`s3://your-bucket/WebSite.zip`)  
+  - **User data** configures EC2 instances to fetch website package from S3 (`s3://your-bucket/WebSite.zip`)  
   - **User data** injects **Cognito** configurations into `index.html` automatically at boot 
-- **Application Load Balancer (ALB) Module** – HTTPS-enabled traffic distribution (ACM cert required)  
+- **Application Load Balancer (ALB) Module** – HTTPS-enabled traffic distribution (ACM certificate required)  
 - **Amazon Cognito Module** – Authentication and user management  
 - **Amazon RDS (MySQL) Module** – Managed relational database with initial schema & data  
 - **Terraform Modules Structure** [here](./Structure.txt)
@@ -78,7 +78,7 @@ By following this project, you will:
 - Download `Terraform_Full_Project.zip`
 - Change `<Your-Region>` in `/variables.tf`
 - ACM Certificate ARN for your ALB domain in `/variables.tf`
-- Create your own profile and change `<Your-Profile>` in `/provider.tf`. Create your secrets and save them **Follow AWS Guides**
+- Create your own profile and change `<Your-Profile>` in `/provider.tf` (create and save your credentials following AWS guidelines)
 - Download `WebSite.zip` and upload to S3 bucket (update bucket path in `/modules/asg/user_data.sh.tftpl`)  
 
 ---
@@ -159,7 +159,7 @@ Update instance depend on **region** for **free tier**
 
 - EC2 runs in **public subnets**, ALB routes traffic to EC2.   
 - Cognito integration injects values into `index.html` during boot.  
-- DB tables will be created in RDS are `products` and `cart`
+- RDS tables created: products and cart
 
 ---
 
@@ -180,15 +180,15 @@ Update instance depend on **region** for **free tier**
 - Verify the ACM certificate is in the same region as your ALB
 - Check security group rules to allow necessary traffic
 - Review Terraform output for any errors during deployment
-- Check Cognito configuration if you found trouble in Signup or Login
-- Cognito use email for verification, so check your email to get verfication code
+- Validate Cognito configuration if you experience issues with sign-up or login
+- Cognito uses **email** verification → check your inbox for the verfication code
 
 ---
 
 ## Resources
 
-- Bootstrap from a [bootstrap](https://getbootstrap.com)
-- Images from [getyimages](https://www.gettyimages.com/)
+- Bootstrap from a [Bootstrap](https://getbootstrap.com)
+- Images from [Getty Images](https://www.gettyimages.com/)
 
 ---
 
