@@ -165,7 +165,7 @@ Update instance depend on **region** for **free tier**
 
 ## Options
 
-- Modify instance types and other parameters in `variables.tf` as needed
+- Modify instance types and other parameters in `/modules/asg/main.tf` as needed
 - Modify ASG sizes in `/modules/asg/main.tf`
 - To run EC2 in **Private Subnet** you have to:
   - Configure **SSM** to access **EC2 instance** and **S3**
